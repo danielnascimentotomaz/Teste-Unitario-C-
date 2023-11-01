@@ -108,6 +108,21 @@ public class Calculadorateste
 
     */
 
+     [Theory]
+     [InlineData(new int[]  { 2,4,8 })]
+     [InlineData(new int[]  { 16,32,64 })]
+     public void DeveVerificarSeOsNumerosSaoParesRetornarVerdaeiro(int [] numero){
+
+        // Arrange (Preparação)
+
+          //Tou Usando o Theory Pra receber os valores
+
+      // Act (Ação) // Assert (Afirmação)
+
+      Assert.All(numero, n => Assert.True(calculadora.EhPar(n)));
+
+     }
+
     
 
 
