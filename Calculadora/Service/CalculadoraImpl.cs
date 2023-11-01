@@ -10,5 +10,11 @@ namespace Calculadora.Service
         public int Somar(int x,int y){
             return x + y;
         }
+
+        public bool EhPar(int x){
+            return x % 2 == 0;
+        
     }
-}
+
+
+}}

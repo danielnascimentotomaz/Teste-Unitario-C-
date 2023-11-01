@@ -58,6 +58,26 @@ public class Calculadorateste
           
            // Verifique se um valor está dentro de um intervalo ou fora dele.
            Assert.InRange(resultadoReal, 1, 100);
+    }
+
+    [Fact]
+    public void DeverVerificarSe4EhParRetornartrue(){
+
+      // Arrange (Preparação)
+      int numero = 4;
+
+
+
+       // Act (Ação)
+
+       bool resultadoReal = calculadora.EhPar(numero);
+
+
+
+       // Assert (Afirmação)
+
+       Assert.True(resultadoReal);
+
 
 
 
