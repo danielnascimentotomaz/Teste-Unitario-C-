@@ -1808,6 +1808,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Calculadora/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculadora.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculadora.dll": {}
+        }
       }
     }
   },
@@ -6103,10 +6113,16 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Calculadora/1.0.0": {
+      "type": "project",
+      "path": "../Calculadora/Calculadora.csproj",
+      "msbuildProject": "../Calculadora/Calculadora.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Calculadora >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
@@ -6120,11 +6136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\Calculadorateste\\Calculadorateste.csproj",
+      "projectUniqueName": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\CalculadoraTeste\\Calculadorateste.csproj",
       "projectName": "Calculadorateste",
-      "projectPath": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\Calculadorateste\\Calculadorateste.csproj",
+      "projectPath": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\CalculadoraTeste\\Calculadorateste.csproj",
       "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\Calculadorateste\\obj\\",
+      "outputPath": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\CalculadoraTeste\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6145,7 +6161,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\Calculadora\\Calculadora.csproj": {
+              "projectPath": "C:\\Users\\danie\\OneDrive\\CURSOS TECNOLOGIA\\PROJETO\\CURSO C#\\TESTE UNITATIO\\ModuloCalculadoraTeste\\Calculadora\\Calculadora.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
