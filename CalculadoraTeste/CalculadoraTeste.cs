@@ -16,13 +16,50 @@ public class Calculadorateste
     public void DeveSomar5Com10Retornar15()
     {
           // Arrange (Preparação)
+
+          int numero1 = 5;
+          int numero2 = 10;
+          int resultadoEsperado = 15;
+          
           
 
             // Act (Ação)
+
+            int resultadoReal = calculadora.Somar(numero1, numero2);
           
 
             // Assert (Afirmação)
-           
+
+            Assert.Equal(resultadoEsperado, resultadoReal);
+            //
+
+             
+
+    }
+
+    [Fact]
+    public void VariosCasoDeTeste(){
+
+         // Arrange (Preparação)
+
+          int numero1 = 5;
+          int numero2 = 10;
+
+         // Act (Ação)
+
+           int resultadoReal = calculadora.Somar(numero1, numero2);
+          
+
+        // Assert (Afirmação)
+
+           Assert.True(resultadoReal > 0);
+           Assert.False(resultadoReal < 0);
+
+          
+           // Verifique se um valor está dentro de um intervalo ou fora dele.
+           Assert.InRange(resultadoReal, 1, 100);
+
+
 
 
 
